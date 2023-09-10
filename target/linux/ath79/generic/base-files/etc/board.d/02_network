@@ -64,7 +64,7 @@ ath79_setup_interfaces()
 	pisen,ts-d084|\
 	pisen,wmb001n|\
 	pisen,wmm003n|\
-	pisen,wfr01n|\
+	pisen,wfr101n|\
 	ruckus,zf7321|\
 	siemens,ws-ap3610|\
 	sophos,ap55|\
@@ -109,7 +109,7 @@ ath79_setup_interfaces()
 	ubnt,unifi|\
 	wd,mynet-wifi-rangeextender|\
 	winchannel,wb2000)
-		ucidef_set_interface_lan "eth0"
+		ucidef_set_interfaces_lan_wan "eth0" "eth1"
 		;;
 	airtight,c-75)
 		ucidef_add_switch "switch0" \
