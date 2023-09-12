@@ -110,6 +110,7 @@ ath79_setup_interfaces()
 	wd,mynet-wifi-rangeextender|\
 	winchannel,wb2000)
 		ucidef_set_interface_lan "eth0"
+		ucidef_set_interface_wan "eth1"
 		;;
 	airtight,c-75)
 		ucidef_add_switch "switch0" \
